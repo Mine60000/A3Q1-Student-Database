@@ -36,7 +36,7 @@ def updateStudentEmail(conn: psycopg.Connection, student_id: int, new_email:str)
     try:
         with conn.cursor() as cur:
             cur.execute(
-                "UPDATE students SET email = %s WHERE student_id = %i",
+                "UPDATE students SET email = %s WHERE student_id = %s",
                 (new_email,student_id))
     except BaseException:
         #if an error occurs
