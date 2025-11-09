@@ -1,4 +1,4 @@
 # A3Q1-Student-Database
 
-pip install --upgrade pip           
-pip install "psycopg[binary,pool]"
+python pip install --upgrade pip           
+python pip install "psycopg[binary,pool]"
